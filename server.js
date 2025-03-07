@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 4000;
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://musicvault-frontend.onrender.com",
     credentials: true,
     methods: "GET,POST,PUT,DELETE,OPTIONS",
     allowedHeaders: "Origin, X-Requested-With, Content-Type, Accept, Authorization",
