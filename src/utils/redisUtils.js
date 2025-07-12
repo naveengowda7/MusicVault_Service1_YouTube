@@ -1,15 +1,18 @@
 const { createClient } = require("redis");
 
-const redisPub = createClient({
+const client = createClient({
   username: "default",
-  password: process.env.REDIS_ID,
+  password: "hVsuxkFLreWnHflApANxVpB8vcwjZHD2",
   socket: {
-    host: "redis-10383.crce182.ap-south-1-1.ec2.redns.redis-cloud.com",
-    port: 10383,
+    host: "redis-14273.c301.ap-south-1-1.ec2.redns.redis-cloud.com",
+    port: 14273,
   },
 });
 
 redisPub.connect().catch(console.error);
+
+
+
 
 const publishYouTubeLink = async (channel, link) => {
   try {
