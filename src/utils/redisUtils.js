@@ -1,6 +1,6 @@
 const { createClient } = require("redis");
 
-const client = createClient({
+const redisPub = createClient({
   username: "default",
   password: "hVsuxkFLreWnHflApANxVpB8vcwjZHD2",
   socket: {
